@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section Desing */
+
+header{
+  background: #FF900E20;
+}
+
+.header-section h3{
+  font-size: 2.6rem;
+}
+.header-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header-section li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+}
+.header-section li a{
+  text-decoration: none;
+  color: #424242;
+  font-size: 18px;
+}
+
+/* Common CSS */
+body p{
+  font-size: 1rem;
+  color: #727272;
+  line-height: 26px;
+}
+
+.content-areia-width{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-font-color{
+  color: #131313;
+}
+
+.btn-primary{
+  padding: 20px 25px;
+  background: #FF900E;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* Banner Design */
+.banner{
+  text-align: center;
+  padding: 116px 289px 50px 289px;
+}
+
+.banner-title{
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+
+
+.banner-image img{
+  margin: 0 auto;
+  padding-bottom: 45px;
+  width: 100%;
+}
+
+/* Our Feature Section */
+.our-features{
+  max-width: 1318px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 80px 0px;
+}
+
+.team-pictures{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature-content-box{
+  max-width: 537px;
+  margin-left: 70px;
+}
+.feature-content-box h3{
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .header-section{
+    flex-direction: column;
+  }
+
+  .header-section li{
+    margin: 10px 5px;
+  }
+
+  /* banner section */
+  .banner{
+  text-align: center;
+  padding: 20px;
+}
+
+  .banner-image{
+    width: 100%;
+  }
+
+.banner-title{
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+
+/* Our Features */
+.our-features{
+  display: flex;
+  flex-direction: column;
+}
+
+.team-pictures{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.feature-title{
+  margin: 30px 0px;
+}
+.feature-content-box{
+  margin-left: 20px;
+}
+}
