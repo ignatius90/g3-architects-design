@@ -77,15 +77,14 @@ body p{
   margin-bottom: 25px;
 }
 
-
 .banner-image img{
   margin: 0 auto;
   padding-bottom: 45px;
   width: 100%;
 }
 
-/* Our Feature Section */
-.our-features{
+/* Our Team Section */
+.team-section{
   max-width: 1318px;
   display: flex;
   align-items: center;
@@ -93,24 +92,82 @@ body p{
   padding: 80px 0px;
 }
 
-.team-pictures{
+.quick-list{
+  color: #727272;
+  font-weight: 500;
+}
+
+.team-font{
+  color: #FF900E;
+}
+
+.team-pictures > div{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.feature-content-box{
+.team-content-box{
   max-width: 537px;
   margin-left: 70px;
 }
-.feature-content-box h3{
+.team-content-box h3{
   font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
+/* Our Features Section */
+.features-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.feature-title{
+  border-left: 5px solid #FF900E;
+  font-size: 2.8rem;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.feature-title-section p{
+  margin-bottom: 20px;
+}
 
+.feature-content-box{
+  max-width: 586px;
+}
+
+.feature-item-box{
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 4px 30px 0px #00000010;
+}
+
+.architect-image{
+  width: 100%;
+}
+
+.btn-ten-years{
+  padding: 45px;
+  background: #FF900E;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: -72px;
+  margin-left: -92px;
+}
+
+.ten-years{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.experience-text{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -138,24 +195,71 @@ body p{
 }
 
 
-/* Our Features */
-.our-features{
+/* Our Team Section */
+.team-section{
   display: flex;
   flex-direction: column;
 }
 
-.team-pictures{
+.team-pictures > div{
   display: grid;
+  justify-content: end;
   grid-template-columns: 1fr;
-  gap: 20px;
   width: 100%;
   margin: 0 auto;
 }
 
-.feature-title{
+.team-title{
   margin: 30px 0px;
 }
-.feature-content-box{
+.team-content-box{
   margin-left: 20px;
 }
+
+/* Feature Section */
+.features-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title-section{
+  padding: 20px;
+}
+
+.feature-content-box{
+  width: 100%;
+}
+
+.feature-title{
+  border-left: 5px solid #FF900E;
+  font-size: 2rem;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-image{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.btn-ten-years{
+  padding: 45px;
+  background: #FF900E;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.ten-years{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.experience-text{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
 }
